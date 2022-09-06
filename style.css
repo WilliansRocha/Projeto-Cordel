@@ -7,14 +7,15 @@
 }
 :root{
     --cor1: black;
-    --fontpadrao: Arial, Verdana, sans-serif;
-    --fontTitle: 'Passion One', cursive, serif;
-    --fontcontent:  'Sriracha', cursive, sans-serif;
+    --font1: Verdana, Tahoma, Geneva sans-serif;
+    --font2: 'Passion One', cursive, serif;
+    --font3 :  'Sriracha', cursive, sans-serif;
 }
 
 html, body{
     min-height: 100vh;
     background-color:  darkgrey;
+    font-family: var(--font1);
 }
 header{
     background-color:  black;
@@ -25,6 +26,8 @@ header > h1{
     padding-top: 50px;
    /* text-transform: uppercase;*/
     font-variant: small-caps;
+    font-family:  var(--font2);
+    font-size: 10vw;
 }
 header > p{
     padding-bottom: 50px;
@@ -44,6 +47,8 @@ section{
     line-height: 2em;
     padding-left: 30px;
     color: white;
+    font-family: var(--font3);
+    font-size: 3.5vw;
 }
 section.normal{
     background-color: white;
@@ -51,14 +56,33 @@ section.normal{
 }
 section.imagem{
     background-color: rgb(51, 51, 51);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem  p{
-   background-color: black;
-   display: inline-block;
-   max-width: 30vw;
-   padding: 10px;
-}
+   background-color: rgba(0, 0, 0, 0.500);
+   display: inline-block; /*faz o tamanho da section do tamanho do conteúdo dentro, não precisa estipular largura da caixa*/
+   padding: 5px;
+   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.623);
+  
+   
 
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.imagem#img01{
+    background-image: url('imagens/background001.jpg');
+ 
+   
+}
+section.imagem#img02{
+    background-image: url('imagens/background002.jpg');
+  
+    
+}
 footer{
     background-color: black;
     text-align: center;
